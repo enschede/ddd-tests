@@ -20,6 +20,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -84,10 +85,10 @@ public class ControllerTest extends TestCase {
         MvcResult mvcResult =
                 mockMvc.perform(post("/createOrder").contentType(MediaType.APPLICATION_JSON).content(json)).andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
 
-        String result =
-                mvcResult.getResponse().getContentAsString();
-        
-        assertThat(result, Matchers.containsString("\"name\":\"Enschede\""));
+        Order order =
+                gson.fromJson(mvcResult.getResponse().getContentAsString(), Order.class);
+
+        assertThat(order.getKlant().getCity(), is("Eanske"));
     }
 
 
