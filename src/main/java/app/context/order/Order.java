@@ -57,6 +57,10 @@ public class Order extends EventSourcingEntity {
         return klant;
     }
 
+    public List<OrderRegel> getOrderRegels() {
+        return orderRegels;
+    }
+
     public void persist() {
         orderRepository.persist(this);
     }
