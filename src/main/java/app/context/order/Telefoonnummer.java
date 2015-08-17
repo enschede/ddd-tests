@@ -1,8 +1,5 @@
-package app.domain.order;
+package app.context.order;
 
-/**
- * Created by marc on 31/07/15.
- */
 public class Telefoonnummer {
     
     private String nummer;
@@ -15,7 +12,10 @@ public class Telefoonnummer {
         return nummer;
     }
 
-    private void setNummer(String nummer) {
-        this.nummer = nummer;
+    @Override
+    public String toString() {
+        return "Telefoonnummer{" +
+                "nummer='" + nummer + '\'' +
+                '}';
     }
 }

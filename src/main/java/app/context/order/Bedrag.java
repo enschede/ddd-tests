@@ -1,4 +1,4 @@
-package app.domain.order;
+package app.context.order;
 
 import java.math.BigDecimal;
 
@@ -14,7 +14,10 @@ public class Bedrag {
         return bedrag;
     }
 
-    private void setBedrag(BigDecimal bedrag) {
-        this.bedrag = bedrag;
+    @Override
+    public String toString() {
+        return "Bedrag{" +
+                "bedrag=" + bedrag +
+                '}';
     }
 }

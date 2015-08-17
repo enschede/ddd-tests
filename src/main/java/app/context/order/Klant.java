@@ -1,4 +1,4 @@
-package app.domain.order;
+package app.context.order;
 
 public class Klant {
     
@@ -35,6 +35,15 @@ public class Klant {
     public Telefoonnummer getTelefoonnummer() {
         return telefoonnummer;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Klant{" +
+                "name='" + name + '\'' +
+                ", street='" + street + '\'' +
+                ", postalcode='" + postalcode + '\'' +
+                ", city='" + city + '\'' +
+                ", telefoonnummer=" + telefoonnummer +
+                '}';
+    }
 }

@@ -1,4 +1,4 @@
-package app.domain.order;
+package app.context;
 
 import java.util.UUID;
 
@@ -6,14 +6,14 @@ import java.util.UUID;
  * Created by marc on 01/08/15.
  */
 public class Entity {
-    private final UUID uuid;
-
-    public Entity() {
-        this.uuid = UUID.randomUUID();
-    }
+    private UUID uuid;
 
     public UUID getUuid() {
         return uuid;
+    }
+
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
     }
 
     @Override

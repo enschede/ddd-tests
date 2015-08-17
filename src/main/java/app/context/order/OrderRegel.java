@@ -1,4 +1,4 @@
-package app.domain.order;
+package app.context.order;
 
 public class OrderRegel {
     
@@ -24,5 +24,13 @@ public class OrderRegel {
 
     private void setBedrag(Bedrag bedrag) {
         this.bedrag = bedrag;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderRegel{" +
+                "omschrijving='" + omschrijving + '\'' +
+                ", bedrag=" + bedrag +
+                '}';
     }
 }

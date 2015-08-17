@@ -1,5 +1,6 @@
-package app.domain.order;
+package app.context.order.factories;
 
+import app.context.order.Order;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +15,8 @@ public class OrderFactory {
     @Autowired
     private AutowireCapableBeanFactory beanFactory;
     
-    public Order createOrder(Klant klant) {
+    public Order createEmptyOrder() {
         Order order = new Order();
-        order.setKlant(klant);
         
         beanFactory.autowireBean(order);
         
