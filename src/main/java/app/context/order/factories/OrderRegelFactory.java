@@ -1,6 +1,6 @@
 package app.context.order.factories;
 
-import app.context.order.Bedrag;
+import app.context.order.valueobjects.Bedrag;
 import app.context.order.OrderRegel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

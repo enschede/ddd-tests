@@ -1,6 +1,6 @@
 package app.domainevents.offer;
 
-import app.context.order.Klant;
+import app.context.order.valueobjects.Klant;
 import app.domainevents.DomainEvent;
 
 import java.math.BigDecimal;

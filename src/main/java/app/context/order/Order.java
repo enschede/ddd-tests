@@ -2,6 +2,7 @@ package app.context.order;
 
 import app.context.EventSourcingEntity;
 import app.context.order.factories.OrderRegelFactory;
+import app.context.order.valueobjects.Klant;
 import app.domainevents.InvoiceOrderDomainEvent;
 import app.domainevents.offer.CreateOrderDomainEvent;
 import app.domainevents.DomainEvent;

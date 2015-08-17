@@ -1,4 +1,4 @@
-package app.context.order;
+package app.context.order.valueobjects;
 
 public class Telefoonnummer {
     

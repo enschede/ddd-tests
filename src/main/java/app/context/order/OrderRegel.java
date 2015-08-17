@@ -1,5 +1,7 @@
 package app.context.order;
 
+import app.context.order.valueobjects.Bedrag;
+
 public class OrderRegel {
     
     private String omschrijving;
